@@ -1,0 +1,83 @@
+#about{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
+.aboutCard{
+  width: 90%;
+  height: 90%;
+  border-radius: 0 200px 200px 0;
+  background-color: var(--color-primary);
+
+  padding: 30px;
+  text-align: center;
+}
+.aboutCard h1{
+  font-family: var(--font-primary);
+  color: var(--color-background);
+  font-size: 60px;
+}
+.aboutCard .caroselAbout{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap:50px;
+ padding: 40px;
+ flex-wrap: wrap;
+}
+.aboutCard .caroselAbout .slideabout{
+  position: relative;
+  width:400px;
+  height: 400px;
+ 
+}
+.aboutCard .caroselAbout .slideabout img{
+  position: absolute;
+  width: 100%;
+    height: 100%;
+  object-fit: cover;
+  object-position:50% 20%;
+  top:0;
+  left: 0;
+  border-radius: 200px;
+  animation: slideimage 0.8s linear;
+}
+.aboutCard .caroselAbout p{
+  font-family: var(--font-primary);
+  font-size: 20px;
+  text-align: justify;
+  max-width: 400px;
+ }
+
+ @keyframes slideimage {
+  from { opacity: 0;}
+  to { opacity: 1;}
+ }
+ @media (max-width: 730px){
+  .aboutCard{
+    border-radius: 0 100px 100px 0;
+  }
+ 
+  .aboutCard h1{
+    font-size: 2.5rem;
+  }
+ }
+
+ @media (max-width: 500px) {
+  .aboutCard h1{
+    font-size: 2rem;
+  }
+  .aboutCard .caroselAbout{
+    padding: 20px;
+  }
+  .aboutCard .caroselAbout .slideabout{
+    height: 250px;
+  }
+  .aboutCard .caroselAbout p{
+    font-size: 0.7rem;
+    margin-left: 0;
+  }
+  
+ }

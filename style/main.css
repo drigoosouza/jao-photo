@@ -1,0 +1,22 @@
+@import url('./header.css');
+@import url('./home.css');
+@import url('./photograph.css');
+@import url('./about.css');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+VIC:wght@100..400&display=swap');
+:root{
+  --color-primary:#f7f7f7;
+  --color-background:#222222;
+  --color-gray:#8f8f8f;
+  --font-primary:"Playwrite AU VIC";
+}
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+}
+body{
+  overflow-x: hidden;
+  background: rgb(34,34,34);
+  background: linear-gradient(189deg, rgba(34,34,34,1) 0%, rgba(43,43,43,1) 13%, rgba(17,17,17,1) 60%, rgba(0,0,0,1) 100%);
+}  

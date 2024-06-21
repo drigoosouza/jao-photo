@@ -1,0 +1,127 @@
+#home{
+  position: relative;
+  width: 100%;
+  height: 85vh;
+}
+#CAROUSEL_IMAGE{
+  display:flex ;
+  width: 100%;
+  transition: all 0.8s;
+  border-radius: 0 0 0 300px;
+  overflow: hidden;
+}
+.slide{
+  display:flex ;
+  width: 100%;
+  transition: all 0.8s;
+}
+#CAROUSEL_IMAGE::after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 85vh;
+  background: radial-gradient(100% 100% at 100% 50%, rgba(165, 165, 165, 0), rgba(0, 0, 0, 0.9) 80%);;
+  z-index: 1;
+  border-radius: 0 0 0 280px ;
+}
+#CAROUSEL_IMAGE .image img{
+
+  width:100vw ;
+  height: 85vh;
+  object-fit: cover;
+  
+  overflow: hidden;
+  z-index: -9999;
+}
+#CAROUSEL_IMAGE .slide .image2 img{
+  object-fit: cover;
+  object-position:50% 20%;
+}
+
+.social{
+  position: absolute;
+  top: 0;
+  height: 100%;
+  margin-left: 150px;
+  
+  z-index: 98;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap:20px
+}
+.social span{
+  width: 6px;
+  height: 10%;
+  background-color: var(--color-gray);
+  border-radius: 10px;
+}
+.social div{
+  display: flex;
+  flex-direction: column;
+}
+.social div a{
+  color: var(--color-primary);
+}
+.social div a ion-icon{
+  font-size: 200%;
+  margin: 10px 0;
+  transition: all 0.4s;
+}
+.social div a ion-icon:hover{
+  
+  color:var(--color-gray);
+  
+}
+
+@media (max-width: 1020px){
+  #CAROUSEL_IMAGE{
+    border-radius: 0 0 0 120px;
+   
+  }
+
+  #CAROUSEL_IMAGE::after{
+    border-radius: 0 0 0 100px
+    
+  }
+ .social{
+  margin-left: 70px;
+ }
+}
+@media (max-width: 720px){
+  #CAROUSEL_IMAGE{
+    border-radius: 0 0 0 100px;
+   
+  }
+
+  #CAROUSEL_IMAGE::after{
+    border-radius: 0 0 0 90px
+    
+  }
+  #CAROUSEL_IMAGE .slide .image2 img{
+    object-position:60% 0%;
+  }
+  .social{
+    margin-left: 40px;
+    gap:5px;
+  }
+  .social, .social div a ion-icon{
+    
+    font-size: 25px;
+  }
+  .social span{
+    height: 100px;
+    width: 3px;
+  }
+}
+@media(max-width:380px){
+  #CAROUSEL_IMAGE{
+    border-radius: 0 0 0 50px;
+  }
+
+  #CAROUSEL_IMAGE::after{
+    border-radius: 0 0 0 40px
+    
+  }
+}
