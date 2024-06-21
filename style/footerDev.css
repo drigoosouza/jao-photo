@@ -1,0 +1,14 @@
+.dateDev{
+  height: 30px;
+  width: 100%;
+  color: var(--color-gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+.dateDev p a{
+  color: var(--color-primary);
+  text-decoration: none;
+  
+}

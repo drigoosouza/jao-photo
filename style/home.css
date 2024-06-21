@@ -1,13 +1,13 @@
 #home{
   position: relative;
   width: 100%;
-  height: 85vh;
+  height: 100vh;
 }
 #CAROUSEL_IMAGE{
   display:flex ;
   width: 100%;
   transition: all 0.8s;
-  border-radius: 0 0 0 300px;
+  border-radius: 0 0 300px 300px;
   overflow: hidden;
 }
 .slide{
@@ -19,15 +19,15 @@
   position: absolute;
   content: "";
   width: 100%;
-  height: 85vh;
+  height: 100vh;
   background: radial-gradient(100% 100% at 100% 50%, rgba(165, 165, 165, 0), rgba(0, 0, 0, 0.9) 80%);;
   z-index: 1;
-  border-radius: 0 0 0 280px ;
+  border-radius: 0 0 280px 280px ;
 }
 #CAROUSEL_IMAGE .image img{
 
   width:100vw ;
-  height: 85vh;
+  height: 100vh;
   object-fit: cover;
   
   overflow: hidden;
