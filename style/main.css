@@ -3,6 +3,7 @@
 @import url('./photograph.css');
 @import url('./about.css');
 @import url('./footerDev.css');
+@import url('./contact.css');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+AU+VIC:wght@100..400&display=swap');
 :root{
   --color-primary:#f7f7f7;
@@ -21,4 +22,12 @@ body{
   overflow-x: hidden;
   background: rgb(34,34,34);
   background: linear-gradient(189deg, rgba(34,34,34,1) 0%, rgba(43,43,43,1) 13%, rgba(17,17,17,1) 60%, rgba(0,0,0,1) 100%);
-}  
+} 
+body::-webkit-scrollbar{
+  width: 10px;
+  background-color:var(--color-background);
+}
+body::-webkit-scrollbar-thumb {
+  background-color:var(--color-gray);
+  cursor: pointer;
+}

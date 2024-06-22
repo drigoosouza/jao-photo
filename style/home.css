@@ -7,7 +7,7 @@
   display:flex ;
   width: 100%;
   transition: all 0.8s;
-  border-radius: 0 0 300px 300px;
+
   overflow: hidden;
 }
 .slide{
@@ -22,7 +22,6 @@
   height: 100vh;
   background: radial-gradient(100% 100% at 100% 50%, rgba(165, 165, 165, 0), rgba(0, 0, 0, 0.9) 80%);;
   z-index: 1;
-  border-radius: 0 0 280px 280px ;
 }
 #CAROUSEL_IMAGE .image img{
 
@@ -40,88 +39,63 @@
 
 .social{
   position: absolute;
-  top: 0;
-  height: 100%;
-  margin-left: 150px;
-  
+  bottom: 30px;
+  width: 100%;
   z-index: 98;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap:20px
 }
 .social span{
-  width: 6px;
-  height: 10%;
+  width: 200px;
+  height: 3px;
   background-color: var(--color-gray);
   border-radius: 10px;
 }
 .social div{
   display: flex;
-  flex-direction: column;
+  gap: 10px;
 }
 .social div a{
-  color: var(--color-primary);
+  width: 6rem;
+  height: 6rem;
+  color: var(--color-gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .social div a ion-icon{
-  font-size: 200%;
+  font-size: 3rem;
   margin: 10px 0;
   transition: all 0.4s;
 }
 .social div a ion-icon:hover{
-  
-  color:var(--color-gray);
+  font-size: 3.5rem;
+  color:var(--color-primary);
   
 }
 
 @media (max-width: 1020px){
-  #CAROUSEL_IMAGE{
-    border-radius: 0 0 0 120px;
-   
-  }
-
-  #CAROUSEL_IMAGE::after{
-    border-radius: 0 0 0 100px
-    
-  }
- .social{
-  margin-left: 70px;
+ .social span{
+    width: 150px;
  }
 }
 @media (max-width: 720px){
-  #CAROUSEL_IMAGE{
-    border-radius: 0 0 0 100px;
-   
-  }
-
-  #CAROUSEL_IMAGE::after{
-    border-radius: 0 0 0 90px
-    
-  }
   #CAROUSEL_IMAGE .slide .image2 img{
     object-position:60% 0%;
   }
-  .social{
-    margin-left: 40px;
-    gap:5px;
+  .social, .social div {
+    gap: 0;
+  }
+  .social, .social div a{
+    height: 4rem;
   }
   .social, .social div a ion-icon{
-    
-    font-size: 25px;
+    font-size: 2rem;
   }
   .social span{
-    height: 100px;
-    width: 3px;
+    width: 100px;
   }
 }
-@media(max-width:380px){
-  #CAROUSEL_IMAGE{
-    border-radius: 0 0 0 50px;
-  }
 
-  #CAROUSEL_IMAGE::after{
-    border-radius: 0 0 0 40px
-    
-  }
-}

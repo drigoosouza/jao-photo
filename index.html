@@ -93,10 +93,18 @@
       </div>
     </section> 
 
-    <section class="Contact"> 
-      <h1>Contact</h1>
-      <form action="">
-        
+    <section class="contact"> 
+      <h1>Contato</h1>
+      <form  class="form_contact" action="">
+        <label for="name">Nome:</label>
+        <input type="text" name="name" id="name" placeholder="nome">
+        <label for="lastname">Sobrenome: </label>
+        <input type="text" name="lastname" id="lastname" placeholder="sobrenome">
+        <label for="email">E-mail: </label>
+        <input type="email" name="email" id="email" placeholder="exemple@exemple.com.br">
+        <label for="content_msg">Mensagem: </label>
+        <textarea name="content_msg" id="content_msg" placeholder="Como posso te ajudar...."></textarea>
+        <input type="submit" value="Enviar">
       </form>
     </section>
 
