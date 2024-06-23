@@ -1,0 +1,49 @@
+.dateClient{
+  width: 100%;
+  background-color: var(--color-background);
+  display: grid;
+  place-items: center;
+  gap: 30px;
+  padding: 3rem 0 ;
+}
+.dateClient .socialFooter{
+  display: flex;
+  gap: 20px;
+}
+.dateClient .socialFooter a{
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  display: grid;
+  place-items: center;
+}
+
+.dateClient .socialFooter a ion-icon{
+  font-size: 2.5rem;
+  margin: 0.5rem;
+  color: var(--color-background);
+}
+.dateClient .menuFooter a{
+  color: var(--color-primary);
+  font-family: var(--font-secound);
+  font-size: 1.3rem;
+  text-decoration: none;
+  margin: 1rem;
+}
+
+@media (max-width:600px) {
+  .dateClient .socialFooter a ion-icon{
+    font-size: 1.9rem;
+  }
+  .dateClient .menuFooter a{
+    font-size: 1rem;
+    margin: 10px;
+  }
+}
+@media (max-width:350px) {
+  .dateClient .menuFooter a{
+    margin: 5px;
+  }
+}
+
+
+

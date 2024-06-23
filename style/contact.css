@@ -1,4 +1,4 @@
-.contact{
+#contact{
   text-align: center;
   color: var(--color-primary);
   padding: 1rem;
@@ -7,24 +7,24 @@
   justify-content: center;
   align-items: center;
 }
-.contact h1{
+#contact h1{
   font-size: 4rem;
   font-family: var(--font-primary);
 }
 
-.contact form{
+#contact form{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   max-width: 500px;
   margin-top: 20px;
 }
-.contact form label{
+#contact form label{
   font-size: 1.2rem;
   font-family:  var( --font-primary);
   color: var(--color-primary);
 }
-.contact form input[type='text'],.contact form input[type='email'] {
+#contact form input[type='text'],#contact form input[type='email'] {
   width: 100%;
   font-size: 1.2rem;
   padding: 1rem;
@@ -34,7 +34,7 @@
   color: var(--color-primary);
   margin-bottom: 10px;
 }
-.contact form textarea{
+#contact form textarea{
   color: var(--color-primary);
   background-color: transparent;
   padding: 5px;
@@ -45,23 +45,23 @@
   height: 300px;
 }
 
-.contact form input:focus, .contact form textarea:focus {
+#contact form input:focus, .contact form textarea:focus {
   box-shadow: 0 0 0 0;
   outline: 0;
   background-color: transparent;
 }
-.contact form input:-webkit-autofill,
-.contact form input:-webkit-autofill:hover,
-.contact form input:-webkit-autofill:focus,
-.contact form input:-webkit-autofill:active {
+#contact form input:-webkit-autofill,
+#contact form input:-webkit-autofill:hover,
+#contact form input:-webkit-autofill:focus,
+#contact form input:-webkit-autofill:active {
   -webkit-box-shadow: 0 0 0 30px #050505 inset;
   -webkit-text-fill-color: var(--color-primary) !important;
 }
 
-.contact form textarea:-webkit-autofill,
-.contact form textarea:-webkit-autofill:hover,
-.contact form textarea:-webkit-autofill:focus,
-.contact form textarea:-webkit-autofill:active {
+#contact form textarea:-webkit-autofill,
+#contact form textarea:-webkit-autofill:hover,
+#contact form textarea:-webkit-autofill:focus,
+#contact form textarea:-webkit-autofill:active {
   -webkit-box-shadow: 0 0 0 30px #050505 inset;
   -webkit-text-fill-color: var(--color-primary) !important;
 }
@@ -75,16 +75,16 @@ input[type="submit"]{
   border-radius: 5px;
 }
 
-@media (max-width:580px) {
-  .contact h1{
+@media (max-width:580px){
+  #contact h1{
     font-size: 3rem;
   }
-  .contact form textarea{
+  #contact form textarea{
     width: 320px;
   }
 }
 @media (max-width:350px){
-  .contact form textarea{
+  #contact form textarea{
     width: 250px;
     height: 200px;
   }

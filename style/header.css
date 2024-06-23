@@ -7,7 +7,7 @@ header, .navHeader{
 header{
   position:fixed;
   width: 100%;
-  padding:50px 150px  ;
+  padding:50px 150px;
   background-color: transparent ;
   z-index: 99;
   transition: all 0.4s;
@@ -24,6 +24,7 @@ header .logo{
 }
 .navHeader{
   gap: 80px;
+  position:relative;
 }
 .btnNav{
   display: flex;
@@ -38,7 +39,7 @@ header .logo{
   height: 3px;
   background-color: var(--color-primary);
   border-radius:10px;
-  
+  transition: all 0.4s ;
 }
 
 .btnNav span:nth-child(1){
@@ -50,13 +51,27 @@ header .logo{
 .btnNav span:nth-child(3){
   width: 40px;
 }
+
+.btnNav.active span:nth-child(1){
+  
+  transform: rotate(-45deg) translate(-2px,9px);
+}
+.btnNav.active span:nth-child(2){
+  width: 0;
+  height: 0;
+}
+.btnNav.active span:nth-child(3){
+  width: 35px;
+  transform: rotate(45deg) translateY(-10px);
+
+  }
 .headerfixed{
   background-color: var(--color-primary);
   /*background: radial-gradient(circle, #222222 0%, rgba(24,24,24,1) 100%);  */
   padding:5px 150px;
   box-shadow: 0px -10px 30px #00000094;
 }
-.headerfixed a{
+.headerfixed .logo{
   color: var(--color-background);
 }
 .headerfixed .navHeader .btnNav span{
