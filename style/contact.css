@@ -42,7 +42,6 @@
   border: 2px solid var(--color-gray) ;
   margin-top: 10px;
   width: 500px;
-  min-width: 320px;
   height: 300px;
 }
 
@@ -74,4 +73,19 @@ input[type="submit"]{
   margin-top:20px;
   border: none;
   border-radius: 5px;
+}
+
+@media (max-width:580px) {
+  .contact h1{
+    font-size: 3rem;
+  }
+  .contact form textarea{
+    width: 320px;
+  }
+}
+@media (max-width:350px){
+  .contact form textarea{
+    width: 250px;
+    height: 200px;
+  }
 }
