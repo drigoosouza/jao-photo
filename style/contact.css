@@ -27,7 +27,7 @@
 #contact form input[type='text'],#contact form input[type='email'] {
   width: 100%;
   font-size: 1.2rem;
-  padding: 1rem;
+  padding: 1rem 0;
   background-color: transparent;
   border: none;
   border-bottom: 2px solid var(--color-gray);
@@ -38,9 +38,9 @@
   color: var(--color-primary);
   background-color: transparent;
   padding: 5px;
-  font-size: 15px;
+  font-size: 19px;
   border: 2px solid var(--color-gray) ;
-  margin-top: 10px;
+  margin-top: 20px;
   width: 500px;
   height: 300px;
 }

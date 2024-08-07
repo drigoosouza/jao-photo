@@ -1,6 +1,6 @@
 .dateClient{
   width: 100%;
-  background-color: var(--color-background);
+  background-color: #ffffff05;
   display: grid;
   place-items: center;
   gap: 30px;
